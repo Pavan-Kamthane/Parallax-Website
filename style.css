@@ -1,0 +1,190 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Product Sans";
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+#background{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 105vh;
+    background-color: #dadada;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+#background img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+#gradient{
+    position: absolute;
+    z-index: 10;
+    bottom: 0;
+    width: 100%;
+    height: 40%;
+    background: linear-gradient(to bottom, transparent, rgba(0,0,0,0.7), black);
+}
+
+#overlay{
+    padding: 30px 40px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 11;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    color: white;
+}
+
+nav h3{
+    font-size: 24px;
+}
+
+nav button{
+    padding: 12px 30px;
+    border-radius: 100px;
+    border: none;
+    font-weight: 600;
+}
+
+#overlay h1{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 100px;
+}
+
+#overlay footer {
+    width: 95%;
+    position: absolute;
+    bottom: 10%;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer h2{
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: 100;
+}
+
+footer h2 #big{
+    font-size: 40px;
+}
+
+footer #right a{
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 13px;
+}
+
+#content{
+    width: 100%;
+    height: 90vh;
+    padding-top: 1px;
+    background-color: black;
+}
+
+#elems{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 70%;
+    height: 250px;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+.block{
+    position: relative;
+    width: 49%;
+    height: 100px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.block .img{
+    width: 100%;
+    height: 100%;
+    /* border-radius: 5px; */
+    background-image: url("./images/sam-schooler-E9aetBe2w40-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.block:nth-child(2) .img{
+    background-image: url("./images/federico-respini-sYffw0LNr7s-unsplash.jpg");
+
+}
+
+.block:nth-child(3) .img{
+    background-image: url("./images/joseph-barrientos-oQl0eVYd_n8-unsplash.jpg");
+}
+
+.block:nth-child(4) .img{
+    background-image: url("./images/nasa-Q1p7bh3SHj8-unsplash.jpg");
+}
+
+
+
+
+.block h5{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-weight: 500;
+    font-size: 16px;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+#content p{
+    width: 35%;
+    margin: 0 auto;
+    margin-top: 70px;
+    color: white;
+    font-weight: 100;
+    font-size: 14px;
+    line-height: 25px;
+    text-align: center;
+}
+
+#man{
+    z-index: 10;
+}
+
+#pahad{
+    z-index: 9;
+}
+
+#sky{
+    z-index: 9;
+}
